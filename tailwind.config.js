@@ -7,6 +7,8 @@ export default {
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
+        "./resources/**/*.js",
+        "./node_modules/flowbite/**/*.js"
     ],
 
     theme: {
@@ -17,5 +19,10 @@ export default {
         },
     },
 
-    plugins: [forms],
+    plugins: [
+        forms,
+        require('@tailwindcss/forms'),
+        require('flowbite/plugin'),
+    ],
 };
+
